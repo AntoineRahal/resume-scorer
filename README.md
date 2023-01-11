@@ -46,6 +46,19 @@ In this case, the TF-IDF algorithm is used to evaluate how representative a skil
 
 To weight the skill using TF-IDF, the previously created dataframe of skills grouped by job will be used. The columns of the dataframe consist of the name of the job and the second includes a list of all the unique skills for a specific job, thus each row represents all the skills relevant to a specific job. For this purpose, TfidfVectorizer from Scikit-learn will be fitted on dataframe of skills grouped by job and used to weight the skills. A custom tokenizer will be used for feature extraction allowing us to extract each skill as a feature, this allows us to have a vector space in which each skill is a dimension with the most unique skills having the highest weights and the most common skills having the lowest weights. After applying the TF-IDF technique, we will have the new weighted skill vector.
 
+| Skill | Number of unique jobs needing the skill | Approximate TF-IDF Weight |
+|-|-|-|
+| Teamwork	| 438	| 0.1761 |
+| Time Management	| 364	| 0.1883 |
+| Accounting	| 176 |	0.2362 |
+| AutoCAD	| 153 |	0.2454 |
+| Linux	| 132	| 0.2551 |
+| Forecasting	| 127 |	0.2576 |
+| Scrum	| 100	| 0.2733 |
+| Financial Modeling | 77	| 0.2904 |
+| R (Programming Language) | 35	| 0.3415 |
+| Aircraft Maintenance | 8	| 0.4332 |
+| Deep Learning	| 4	| 0.4721 |
 
 ## 6. Computing the similarity of the Documents
 
