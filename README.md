@@ -34,6 +34,14 @@ A separate dataframe of skills grouped by job is created, this step would help i
 ### 3.2 Pattern File
 We can create a Pattern File by getting the unique set of skills available in our data to extract skills from the CVs and the job description. For this purpose, spaCy can be used to tokenize the text and identify specific entities in the text. The previously built lexicon of skill will be used to do rule-based matching using spaCy’s Entity Ruler which is a component of the spaCy pipeline that allows us to do rule-based entity recognition by letting us add named entities based on a dictionary of patterns. To be more specific, entity patterns dictionaries are dictionaries with two keys: "label", specifying the label to assign to the entity if the pattern is matched, and "pattern", the match pattern. For example, **{"label": "SKILL|Python", "pattern": [{"LOWER": "python"}]}** enablesspaCy to find in the text a token whose lowercase form matches “python”, e.g., “Python”, “PYTHON” or “python”, basically any form of the word “python”.
 
-## Extracting Skills from the Documents
+## 4. Extracting Skills from the Documents
 
 To do this step efficiently, spaCy allows us to load patterns from JSONL (JSON Lines or newline-delimited JSON) files, containing one pattern object per line. We will use the previously created Pattern File.
+
+## 5. Weighting the Skills
+
+In this step, Term frequency inverse document frequency (TF-IDF), a technique commonly used in text mining, is used to assign weights for the skills. TF-IDF is a measure used to evaluate how important a word is to a document in a collection or a corpus.
+
+In this case, the TF-IDF algorithm is used to evaluate how representative a skill is to a selected entity. If a skill is present across a wide range of jobs, the lower the weight of the skill. This is important because a set of generic and commonly held skills should not be weighted the same as the unique skills that are used on a specific job. For example, Microsoft Word and AutoCAD cannot be weighted the same when it comes to an engineering job, it is a skill that is hardly representative of the job position under consideration. Overall, the goal of this is to downweight skills that are common in many jobs and industries.
+
+To weight the skill using TF-IDF, the previously created dataframe of skills grouped by job will be used. The columns of the dataframe consist of the name of the job and the second includes a list of all the unique skills for a specific job, thus each row represents all the skills relevant to a specific job. For this purpose, TfidfVectorizer from Scikit-learn will be fitted on dataframe of skills grouped by job and used to weight the skills. A custom tokenizer will be used for feature extraction allowing us to extract each skill as a feature, this allows us to have a vector space in which each skill is a dimension with the most unique skills having the highest weights and the most common skills having the lowest weights. After applying the TF-IDF technique, we will have the new weighted skill vector.
