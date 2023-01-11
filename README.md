@@ -54,6 +54,6 @@ After completing the previous steps, we can now (1) extract the skills from our 
 In this project, the vectors are arrays containing the weight of the skills available in the CV and the job description. However, it is important to note that our dimensions (skills) will only be the skillsavailable in the job description because they are the skills of interest and not all the skills available across all documents. This helps avoid creating unnecessary distance between the vector for the job description and the vector for the CV. As a result, we will have the cosine similarity ranging from 0 to 1, since the term frequencies cannot be negative because our weights cannot be negative.
 
 
-## Outcome
+## 7. Outcome
 
 Below we can find the skills identified in a sample job description:
