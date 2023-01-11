@@ -75,3 +75,16 @@ The Streamlit web app can be found [here](https://antoinerahal-resume-scorer-mai
 ## 9. Next Steps
 
 This approach would help the recruiter accelerate the screening process by filtering out the large pool of candidates. While this method of parsing and scoring CVs hasobvious limitations and personal and technical skills are not the only way to evaluate potential candidates for a job position, using this tool to shortlist thenumber of candidates might save recruiters a considerable amount of time. A next step in this project could be the summarization and extraction of key informationfrom resumes, to provide a quick overview of all the candidates to help recruiters in the selection process. Furthermore, with a properly labeled dataset aneven more efficient and reliable scoring process can be explored in the future.
+
+## Repository Contents
+```bash
+.
+├── data                               # contains  data
+│   └── my_patterns.jsonl              # pickled final model
+├── image                              # contains visualizations and local images
+├── tfidf                              # contains TFIDF Vectorizer
+│   └── tfidf.pkl                      # pickled TFIDF Vectorizer
+├── README.md                          # public-facing preview
+├── main.py                            # interactive web app to host project
+└── requirements.txt                   # app dependencies
+```
