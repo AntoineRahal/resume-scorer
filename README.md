@@ -92,7 +92,7 @@ This approach would help the recruiter accelerate the screening process by filte
 ## Repository Contents
 ```bash
 .
-├── data                               # contains  data
+├── data                               # contains data
 │   └── my_patterns.jsonl              # patterns file
 ├── image                              # contains visualizations and local images
 ├── tfidf                              # contains TFIDF Vectorizer
