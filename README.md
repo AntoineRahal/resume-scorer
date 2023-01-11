@@ -52,3 +52,8 @@ To weight the skill using TF-IDF, the previously created dataframe of skills gro
 After completing the previous steps, we can now (1) extract the skills from our documents using rule-based entity recognition with the help of spaCy’s Entity Ruler and (2) get a vector of weight for the skills using TfidfVectorizer. Having our skills vectors for the CVs and the job description, the final step consists of computing the similarity between each CVs and the job description. To achieve that objective, a commonly used metric in the literature for measuring document similarity is the Cosine Similarity, it helps determine how similar the documents are irrespective of their size. The reason is that the cosine similarity evaluates the orientation of the vectors and not their magnitude.
 
 In this project, the vectors are arrays containing the weight of the skills available in the CV and the job description. However, it is important to note that our dimensions (skills) will only be the skillsavailable in the job description because they are the skills of interest and not all the skills available across all documents. This helps avoid creating unnecessary distance between the vector for the job description and the vector for the CV. As a result, we will have the cosine similarity ranging from 0 to 1, since the term frequencies cannot be negative because our weights cannot be negative.
+
+
+## Outcome
+
+Below we can find the skills identified in a sample job description:
