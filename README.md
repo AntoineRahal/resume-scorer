@@ -67,3 +67,7 @@ We can also notice that some skills weren’t identified properly when parsing t
 ### 7.2 Dealing with skills that did not match properly
 
 As we can see most skills are identified properly, the skills that are not identified are simply not present in our original dataset of skills. We can also notice that some words matched as skills but are not actual skills, in the case of this job description: “Engineering” is not an actual skill, in addition we can see that the verb “design” had been mistaken with the actual skill “design”. To deal with this issue, the user will be given the option to filter out the skills that are not matching properly. 
+
+## 8. Streamlit Web App
+
+The Streamlit web app can be found [here](https://antoinerahal-resume-scorer-main-rzzew6.streamlitapp.com)!
