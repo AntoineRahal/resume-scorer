@@ -59,3 +59,11 @@ In this project, the vectors are arrays containing the weight of the skills avai
 Below we can find the skills identified in a sample job description:
 
 ![img1](./image/image_1.png)
+
+### 7.1 Dealing with skills that should’ve been identified but were not identified
+
+We can also notice that some skills weren’t identified properly when parsing the document, to properly deal with this issue an option for the user will be added for them to select the skill that was not identified and write its corresponding pattern. This simply means that the user will be indirectly provided an option to write the pattern of the skill that needs to be identified and also choose the correct label for the skill among the labels in the lexicon of skills. This way the skill willbe properly identified and assigned the correct weight.
+
+### 7.2 Dealing with skills that did not match properly
+
+As we can see most skills are identified properly, the skills that are not identified are simply not present in our original dataset of skills. We can also notice that some words matched as skills but are not actual skills, in the case of this job description: “Engineering” is not an actual skill, in addition we can see that the verb “design” had been mistaken with the actual skill “design”. To deal with this issue, the user will be given the option to filter out the skills that are not matching properly. 
