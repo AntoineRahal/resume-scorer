@@ -71,3 +71,7 @@ As we can see most skills are identified properly, the skills that are not ident
 ## 8. Streamlit Web App
 
 The Streamlit web app can be found [here](https://antoinerahal-resume-scorer-main-rzzew6.streamlitapp.com)!
+
+## 9. Next Steps
+
+This approach would help the recruiter accelerate the screening process by filtering out the large pool of candidates. While this method of parsing and scoring CVs hasobvious limitations and personal and technical skills are not the only way to evaluate potential candidates for a job position, using this tool to shortlist thenumber of candidates might save recruiters a considerable amount of time. A next step in this project could be the summarization and extraction of key informationfrom resumes, to provide a quick overview of all the candidates to help recruiters in the selection process. Furthermore, with a properly labeled dataset aneven more efficient and reliable scoring process can be explored in the future.
