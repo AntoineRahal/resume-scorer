@@ -88,3 +88,7 @@ This approach would help the recruiter accelerate the screening process by filte
 ├── main.py                            # interactive web app to host project
 └── requirements.txt                   # app dependencies
 ```
+
+## For More Information
+
+For additional information or suggestions, contact Antoine Rahal at [antoinerahal1@gmail.com](mailto:antoinerahal1@gmail.com)
