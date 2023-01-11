@@ -10,4 +10,7 @@ The purpose of this project is to automate the tedious task of manual processing
 
 The web app can be found [here](https://antoinerahal-resume-scorer-main-rzzew6.streamlitapp.com).
 
+## Business Problem
+
+Curriculum vitae (CVs), also known as resumes, continue to be a crucial standard document and a key decision element in selecting candidates and assessing their experience. Its primary function is to determine applicants' eligibility for a job position. However, corporate companies and recruitment agencies process an increasing number of CVs daily which constitutes a challenge for human recruiters.
 
