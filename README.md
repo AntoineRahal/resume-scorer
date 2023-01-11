@@ -58,4 +58,4 @@ In this project, the vectors are arrays containing the weight of the skills avai
 
 Below we can find the skills identified in a sample job description:
 
-![img1](./image/image_1)
+![img1](./image/image_1.png)
