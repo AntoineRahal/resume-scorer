@@ -93,7 +93,7 @@ This approach would help the recruiter accelerate the screening process by filte
 ```bash
 .
 ├── data                               # contains  data
-│   └── my_patterns.jsonl              # pickled final model
+│   └── my_patterns.jsonl              # patterns file
 ├── image                              # contains visualizations and local images
 ├── tfidf                              # contains TFIDF Vectorizer
 │   └── tfidf.pkl                      # pickled TFIDF Vectorizer
